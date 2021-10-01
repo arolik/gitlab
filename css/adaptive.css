@@ -12,7 +12,7 @@
         max-width:100%;
     }
     
-    header .wrapper .links_wrapper .links {
+    header .wrapper  .links {
         position:fixed;
         background-color:#aa9b77;
         opacity: 0.9;
@@ -21,7 +21,7 @@
         height:7%;
         justify-content: center; 
     }
-    header .wrapper .links_wrapper .links nav  {
+    header .wrapper .links nav  {
         padding-top: 10px;
     }
     
