@@ -1,0 +1,74 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+/* СТИЛИ К HEADER  */
+header {
+    background-image: url(../img/mainBg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:791px;
+    box-sizing: border-box;
+}
+header .wrapper {
+    max-width:1152px;
+    margin:0 auto;
+    padding-top:40px;
+}
+header .wrapper .links {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .wrapper .links nav {
+    display:flex;
+    flex-direction: row;
+}
+header .wrapper .links nav a {
+    font-size:16px;
+    text-decoration:none;
+    color:#fff;
+}
+
+header .wrapper .links nav a:nth-child(1), header .wrapper .links nav a:nth-child(2) {
+    margin-right: 55px;
+}
+header .wrapper .links nav a:nth-child(1):hover, header .wrapper .links nav a:nth-child(2):hover {
+    color:#000000;
+}
+header .wrapper .links .links_box img {
+    width:24px;
+    height:20px;
+}
+header .discription {
+    margin:0 auto;
+    margin-top: 230px;
+    margin-bottom: 296px;
+    max-width:800px;
+    color:#fff;
+}
+header .discription h1 {
+    font-size:42px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+header .discription p {
+    max-width:600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+header .downArrow  {
+    text-align: center;
+}
+ /**/
+
+ .block {
+     height:2500px;
+ }

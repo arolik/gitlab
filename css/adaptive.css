@@ -1,0 +1,28 @@
+@media screen and (max-width:1200px){
+    header .wrapper {
+        max-width:90%;
+    }
+}
+
+@media screen and (max-width:768px){
+    header .wrapper .links_logo {
+        display:none;
+    }
+    header .wrapper {
+        max-width:100%;
+    }
+    
+    header .wrapper  .links {
+        position:fixed;
+        background-color:#aa9b77;
+        opacity: 0.9;
+        width:100%;
+        top:0;
+        height:7%;
+        justify-content: center; 
+    }
+    header .wrapper .links nav  {
+        padding-top: 10px;
+    }
+    
+}
