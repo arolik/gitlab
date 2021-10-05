@@ -179,16 +179,7 @@ header .downArrow  {
 .goods-list_toggle p, .goods-women .goods-list-toggle p {
     margin:0px;
 }
-.goods-list_toggle div input, .goods-women .goods-list-toggle div input {
-    display:none;
-}
-.goods-list_toggle div label, .goods-women .goods-list-toggle div label {
-    font-size:26px;
-    font-weight:bold;
-}
-.goods-list_toggle div label:hover {
-    cursor:pointer;
-}
+
 .goods-for-men, .goods-for-women {
     height:420px;
     display:flex;
@@ -254,12 +245,10 @@ header .downArrow  {
     justify-content: center;
     align-items: center;
 }
-
 .goods-for-men_item_discription, .goods-for-women_item_discription {
     display:flex;
     flex-direction: row;
     justify-content:space-between;
-    
 }
 .goods-for-men_item_discription_name, 
 .goods-for-women_item_discription_name {
@@ -288,7 +277,7 @@ header .downArrow  {
     flex-direction: column;
     margin-right: auto;
     margin-left: 0px;
-    margin-bottom: 17px;
+    margin-bottom: 5%;
 }
  /* SLIDER */
 .slider {
@@ -326,9 +315,57 @@ header .downArrow  {
 .slider .slick-track {
     display:flex;
 }
+.slider .slick-track > *, .slider-woman .slick-track > * {
+    margin:0px 33px 0px 33px;
+}
 .slider .slick-list {
     overflow: hidden;
 }
+/* SLIDER WOMAN*/
+
+.slider-woman {
+    position: relative;
+    min-width:0;
+}
+.slider-woman .slick-track {
+    display:flex;
+}
+.slider-woman .slick-list {
+    overflow: hidden;
+}
+.slider-woman .slick-arrow {
+    position:absolute;
+    z-index: 10;
+    top:-10%;
+    font-size: 0;
+    width:32px;
+    height:32px;
+    border:none;
+    color:inherit;
+    padding:0;
+}
+.slider-woman .slick-prev {
+    left: 0px;
+    background:url('./../img/prev-arrow.png');
+    background-size:100%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.slider-woman .slick-next {
+    left: 22px;
+    background:url('./../img/next-arrow.png');
+    background-size:100%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.slider-woman .slick-arrow:hover {
+    cursor:pointer;
+}
+
+
+
+
+
 
 
 
