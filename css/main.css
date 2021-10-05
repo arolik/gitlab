@@ -178,6 +178,9 @@ header .downArrow  {
 }
 .goods-list_toggle p, .goods-women .goods-list-toggle p {
     margin:0px;
+    letter-spacing: 7px;
+    color:#aa9b77;
+    font-weight: bold;
 }
 
 .goods-for-men, .goods-for-women {
@@ -301,15 +304,15 @@ header .downArrow  {
 .slider .slick-prev {
     right: 22px;
     background:url('./../img/prev-arrow.png');
-    background-size:100%;
+    background-size:cover;
     background-position: center center;
     background-repeat:no-repeat;
 }
 .slider .slick-next {
     right: 0;
     background:url('./../img/next-arrow.png');
-    background-size:100%;
-    background-position: center center;
+    background-size:cover;
+    background-position: right;
     background-repeat:no-repeat;
 }
 .slider .slick-track {
