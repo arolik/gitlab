@@ -3,8 +3,5 @@ $(document).ready(function(){
         slidesToShow:3,
         arrows:true,
     });
-    $('.slider-woman').slick({
-        slidesToShow:3,
-        arrows:true,
-    });
+    
 });
