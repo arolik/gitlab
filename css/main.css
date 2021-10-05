@@ -174,7 +174,7 @@ header .downArrow  {
     flex-direction: column;
     margin-right: 0;
     margin-left: auto;
-    margin-bottom: 17px;
+    margin-bottom: 5%;
 }
 .goods-list_toggle p, .goods-women .goods-list-toggle p {
     margin:0px;
@@ -191,7 +191,6 @@ header .downArrow  {
 }
 .goods-for-men, .goods-for-women {
     height:420px;
-    margin-bottom: 50px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -291,6 +290,46 @@ header .downArrow  {
     margin-left: 0px;
     margin-bottom: 17px;
 }
+ /* SLIDER */
+.slider {
+    min-width:0;
+    position: relative;
+}
+.slider .slick-arrow {
+    position:absolute;
+    z-index: 10;
+    top:-10%;
+    font-size: 0;
+    width:32px;
+    height:32px;
+    border:none;
+    color:inherit;
+    padding:0;
+}
+.slider .slick-arrow:hover {
+    cursor:pointer;
+}
+.slider .slick-prev {
+    right: 22px;
+    background:url('./../img/prev-arrow.png');
+    background-size:100%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.slider .slick-next {
+    right: 0;
+    background:url('./../img/next-arrow.png');
+    background-size:100%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.slider .slick-track {
+    display:flex;
+}
+.slider .slick-list {
+    overflow: hidden;
+}
+
 
 
 /**/
