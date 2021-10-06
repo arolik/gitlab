@@ -49,26 +49,26 @@
             <div class="filter-wrapper_filter">
                 <div class="filter_toggle">
                     <div class="filter_toggle-elem">
-                        <input type="checkbox" id="men" />
+                        <input type="checkbox" id="men" checked/>
                         <label for="men" class="toggle-men">men</label>
                     </div>
                     <div class="filter_toggle-elem">
-                        <input type="checkbox" id="women" />
+                        <input type="checkbox" id="women" checked/>
                         <label for="women" class="toggle-women">women</label>
                     </div>
                     <div class="filter_toggle-elem">
-                        <input type="checkbox" id="children" />
+                        <input type="checkbox" id="children" checked/>
                         <label for="children" class="toggle-children">children</label>
                     </div>
                 </div>
                 <div class="filter_btn-use-filter">
-                    <input type="button" value="see all products" />
+                    <input type="button" value="see all products" id="showGoods"/>
                 </div>
             </div>
         </div>
 
         <div class="goods-wrapper">
-            <div class="goods-men">
+            <div class="goods-men" id="goodsMen">
                 <div class="goods-men_discription">
                     <p>men</p>
                     <hr>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <div class="goods-women">
+            <div class="goods-women" id="goodsWomen">
                 <div class="goods-women_discription">
                     <hr>
                     <p>women</p>
