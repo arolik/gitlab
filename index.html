@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/adaptive.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header id="home">
-        <div class="wrapper">
-                <div class="links">
-                    <div class="links_logo">
-                        <a href="#home"><img src="img/Logo.png" /></a>
+        <div class="home-wrapper">
+            <div class="links">
+                <div class="links_logo">
+                    <a href="#home"><img src="img/Logo.png" /></a>
+                </div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <div class="links_box">
+                        <a href="#home"><img src="img/fa-shopping-cart.png" /></a>
                     </div>
-                    <nav>
-                        <a href="#">Home</a>
-                        <a href="#">Products</a>
-                        <div class="links_box">
-                            <a href="#home"><img src="img/fa-shopping-cart.png" /></a>
-                        </div>
-                    </nav>
+                </nav>
             </div>
             <div class="discription">
                 <h1>
@@ -38,19 +39,408 @@
                 </p>
             </div>
             <div class="downArrow">
-                <a href="#block"><img src="img/downArrow.png" /></a>
+                <a href="#"><img src="img/downArrow.png" /></a>
             </div>
         </div>
     </header>
 
-    <div class="block" id="block">
+    <section class="main-block" id="products">
+        <div class="filter-wrapper">
+            <div class="filter-wrapper_filter">
+                <div class="filter_toggle">
+                    <div class="filter_toggle-elem">
+                        <input type="checkbox" id="men" checked/>
+                        <label for="men" class="toggle-men">men</label>
+                    </div>
+                    <div class="filter_toggle-elem">
+                        <input type="checkbox" id="women" checked/>
+                        <label for="women" class="toggle-women">women</label>
+                    </div>
+                    <div class="filter_toggle-elem">
+                        <input type="checkbox" id="children" checked/>
+                        <label for="children" class="toggle-children">children</label>
+                    </div>
+                </div>
+                <div class="filter_btn-use-filter">
+                    <input type="button" value="see all products" id="showGoods"/>
+                </div>
+            </div>
+        </div>
 
+        <div class="goods-wrapper">
+            <div class="goods-men" id="goodsMen">
+                <div class="goods-men_discription">
+                    <p>men</p>
+                    <hr>
+                </div>
+                <div class="goods-list">
+                    <div class="goods-list_toggle">
+                        <p><span id="mensCurentIndex"></span>/<span id="mensAllIndexes"></span></p>
+                    </div>
+                    <div class="goods-for-men slider">
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man1.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    t-shirt
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    5,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man2.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    pants forclaz
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    30,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man3.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    backpack
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    60,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man3.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    backpack
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    60,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man3.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    backpack
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    60,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-men_item">
+                            <div class="goods-for-men_item_navigation">
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-men_item_photo">
+                                <img src="img/products-man3.png" alt="tshirt" />
+                            </div>
+                            <div class="goods-for-men_item_discription">
+                                <p class="goods-for-men_item_discription_name">
+                                    backpack
+                                </p>
+                                <p class="goods-for-men_item_discription_price">
+                                    60,00 €
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-women" id="goodsWomen">
+                <div class="goods-women_discription">
+                    <hr>
+                    <p>women</p>
+                </div>
+                <div class="goods-list">
+                    <div class="goods-list-toggle">
+                        <p><span id="womensCurentIndex"></span>/<span id="womensAllIndexes"></span></p>
+                    </div>
+                    <div class="goods-for-women slider">
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women1.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    giacket
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    60,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women2.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    trekking shoes
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    80,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women3.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    t-shirt
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    20,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women3.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    t-shirt
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    20,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women3.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    t-shirt
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    20,00 €
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goods-for-women_item">
+                            <div class="goods-for-women_item_navigation"> 
+                                <div class="goods-size">
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="s">s</option>
+                                        <option value="m">m</option>
+                                        <option value="l">l</option>
+                                    </select>
+                                </div>
+                                <div class="goods-color">
+                                    <div class="goods-color_blue"></div>
+                                    <div class="goods-color_yellow"></div>
+                                    <div class="goods-color_grey"></div>
+                                </div>
+                            </div>
+                            <div class="goods-for-women_item_photo">
+                                <img src="img/products-women3.png" />
+                            </div>
+                            <div class="goods-for-women_item_discription">
+                                <p class="goods-for-women_item_discription_name">
+                                    t-shirt
+                                </p>
+                                <p class="goods-for-women_item_discription_price">
+                                    20,00 €
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <div class="block">
+        text
     </div>
 
 
 
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

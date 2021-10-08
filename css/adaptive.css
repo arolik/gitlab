@@ -1,19 +1,20 @@
+/* стили к  header */
 @media screen and (max-width:1200px){
-    header .wrapper {
+    .home-wrapper {
         max-width:90%;
     }
 }
 
 @media screen and (max-width:768px){
-    header .wrapper .links_logo {
+    .links_logo {
         display:none;
     }
-    header .wrapper {
+    .home-wrapper {
         max-width:100%;
     }
-    
-    header .wrapper  .links {
+    .links {
         position:fixed;
+        z-index:100;
         background-color:#aa9b77;
         opacity: 0.9;
         width:100%;
@@ -21,8 +22,39 @@
         height:7%;
         justify-content: center; 
     }
-    header .wrapper .links nav  {
+    .links nav  {
         padding-top: 10px;
+    }
+}
+/* СТИЛИ К MAIN BLOCK */
+
+@media screen and (max-width:768px){
+    .goods-men, .goods-women  {
+        padding-top: 0;
+    }
+    .filter-wrapper_filter {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .filter_toggle {
+        flex-wrap: wrap;
+    }
+    .goods-men_discription, .goods-women_discription {
+        margin-bottom: 0;
+    }
+    .goods-list_toggle p, .goods-women .goods-list-toggle p  {
+        margin-bottom: 100%;
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
