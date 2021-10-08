@@ -345,28 +345,44 @@ header .downArrow  {
 
 
 
+/* FOOTER */
 
-
-
-
-
-/**/
-
-.block {
-    height: 2500px;
+footer {
+    background-color:#424242;
+    height:350px;
+    display:flex;
+}
+.footer-wrapper {
+    max-width:1152px;
+    margin:0 auto;
+    padding-top: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.footer-wrapper > * {
+    flex: 0 0 30%;
+}
+.trekking {
+    display:flex;
+    flex-direction: column;
+}
+.trekking  h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.trekking  p, contacts p{
+    margin:0;
+    font-size: 16px;
+}
+.contacts {
+    display:flex;
+    flex-direction: column;
+    text-align:right;
 }
 
 
 
 
-
-
-<<<<<<< HEAD
-
- 
- .block {
-     height:2500px;
- }
-=======
- 
->>>>>>> 93bc45042738bd2a6e4c287d1f0681d4329a8840

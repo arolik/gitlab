@@ -48,10 +48,39 @@
     
 }
 
+/* СТИЛИ К FOOTER */
+@media screen and (max-width:1200px){ 
+    .footer-wrapper {
+        max-width:90%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+}
 
 
-
-
+@media screen and (max-width:768px){
+    .footer-wrapper > * {
+        flex: 0 0 40%;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+}
+@media screen and (max-width:576px){
+    .footer-wrapper {
+        flex-direction: column;
+        padding-top: 0;
+        align-items: flex-start;
+    }
+    .footer-wrapper > * {
+        flex: 1 1 100%;
+        display:flex;
+    }
+    .contacts {
+        justify-content:center;
+    }
+    
+}
 
 
 
