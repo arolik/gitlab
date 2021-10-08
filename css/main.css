@@ -342,8 +342,43 @@ header .downArrow  {
     background-repeat:no-repeat;
 }
 
+/* BLOCK ABOUT US */
 
+.about-us {
+    height:400px;
+    background-color:#aa9b77;
+    
+}
+.about-us_wrapper {
+    
+    max-width:1152px;
+    margin:0 auto;
+    padding-top: 70px;
+}
 
+.about-us_discription   {
+    max-width:710px;
+    margin:0 auto;
+    border:1px solid #918363;
+    text-align: center;
+    font-weight:bold;
+    color:#837659;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display:flex;
+}
+.about-us_discription legend {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.about-us_discription p {
+    width:470px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 16px;
+}
 
 
 
@@ -360,13 +395,3 @@ header .downArrow  {
 
 
 
-
-<<<<<<< HEAD
-
- 
- .block {
-     height:2500px;
- }
-=======
- 
->>>>>>> 93bc45042738bd2a6e4c287d1f0681d4329a8840
