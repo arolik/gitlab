@@ -50,13 +50,16 @@
 
 /* СТИЛИ К FOOTER */
 @media screen and (max-width:1200px){ 
+    .e-commerce_wrapper {
+        max-width:90%;
+        margin: 0 auto;
+    }
     .footer-wrapper {
         max-width:90%;
         margin: 0 auto;
         padding-top: 0;
     }
 }
-
 
 @media screen and (max-width:768px){
     .footer-wrapper > * {
@@ -67,6 +70,11 @@
     }
 }
 @media screen and (max-width:576px){
+    .e-commerce_wrapper div {
+        flex-basis:100%;
+        justify-content:space-between;
+    }
+
     .footer-wrapper {
         flex-direction: column;
         padding-top: 0;
