@@ -45,11 +45,26 @@
     .goods-list_toggle p, .goods-women .goods-list-toggle p  {
         margin-bottom: 100%;
     }
-    
 }
+ /* СТИЛИ ABOUT US */
 
-
-
+ @media screen and (max-width:576px){
+    .about-us {
+         height:auto;
+    }
+    .about-us_wrapper {
+        padding-bottom: 70px;
+    }
+    .about-us_discription {
+        width:100%;
+        padding:0;
+        justify-content: center;
+    }
+    .about-us_discription p{
+        width:auto;
+        word-break:normal;
+    }
+}
 
 
 
