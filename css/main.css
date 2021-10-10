@@ -379,7 +379,72 @@ header .downArrow  {
     text-align: center;
     font-size: 16px;
 }
+ 
+/* FOOTER */
 
+footer {
+    background-color:#424242;
+    height:350px;
+    display:flex;
+    flex-direction: column;
+}
+.e-commerce {
+    background-color:#535253;
+    height:70px;
+}
+.e-commerce_wrapper {
+    max-width:1152px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+.e-commerce_wrapper div {
+    display:flex;
+    flex-direction: row;
+    flex-basis:40%;
+    justify-content:flex-start;
+    align-items: center;
+}
+.fa-twit  {
+    width:29px;
+    height:auto;
+}
+.e-commerce_wrapper div p {
+    color:#fff;
+    font-size:16px;
+}
+
+.footer-wrapper {
+    max-width:1152px;
+    margin:0 auto;
+    padding-top: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.footer-wrapper > * {
+    flex: 0 0 30%;
+}
+.trekking {
+    display:flex;
+    flex-direction: column;
+}
+.trekking  h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.trekking  p, contacts p{
+    margin:0;
+    font-size: 16px;
+}
+.contacts {
+    display:flex;
+    flex-direction: column;
+    text-align:right;
+}
 
 
 
